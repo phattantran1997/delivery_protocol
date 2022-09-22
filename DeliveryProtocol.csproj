@@ -21,11 +21,17 @@
     <None Remove="Microsoft.Extensions.Configuration" />
     <None Remove="System.Configuration.ConfigurationManager" />
     <None Remove="Repository\" />
+    <None Remove="Entities\Request\" />
+    <None Remove="Entities\Response\" />
+    <None Remove="Ultils\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MongoSetting\" />
     <Folder Include="Services\" />
     <Folder Include="Entities\" />
     <Folder Include="Repository\" />
+    <Folder Include="Entities\Request\" />
+    <Folder Include="Entities\Response\" />
+    <Folder Include="Ultils\" />
   </ItemGroup>
 </Project>

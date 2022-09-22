@@ -7,6 +7,7 @@ builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("Mo
 
 builder.Services.AddSingleton<MongoContext>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IAddressService, AddressService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -29,8 +30,3 @@ app.MapControllers();
 
 app.Run();
 
-
-partial class Program
-{
-    public static MongoDBSettings ConnectionString { get; private set; }
-}
